@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: black;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header a,
+header a:visited {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: red;
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+section h1 span {
+  color: red;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2::first-letter {
+  color: red;
+}
+
+p {
+  text-align: justify;
+}
+
+main {
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+main section img {
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.container div {
+  height: 250px;
+  position: relative;
+}
+
+.container div p {
+  margin-top: 212px;
+  text-align: center;
+}
+
+.container div img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: black;
+  height: 50px;
+}
+
+footer p {
+  font-size: 1.2em;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer div {
+  width: 60vw;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
